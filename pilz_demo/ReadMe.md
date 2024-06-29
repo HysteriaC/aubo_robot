@@ -19,3 +19,13 @@
 #robot  = Robot(version= __REQUIRED_API_VERSION__)
 #cmdJoint = Ptp(goal=angles, vel_scale=1.0,target_link='you_tool_link',planning_group = "your_move_group_name", #reference_frame="base_link")
 #robot.move(cmdJoint)
+#rosservice call pause_movement
+#rosservice call resume_movement
+#rosservice call stop_movement
+#Multithreading
+#When move() is running in a separate thread, the move control orders can be issued directly via the following methods of the robot object:
+
+#r.pause()
+#r.resume()
+#r.stop()
+#In this case stop() only ends the move-thread.
