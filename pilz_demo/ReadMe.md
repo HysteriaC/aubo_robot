@@ -1,6 +1,6 @@
 #1. Launch the robot launch files
 #source devel/setup.bash
-#roslaunch aubo_i5_moveit_config moveit_planning_execution.launch robot_ip:=127.0.0.1
+#roslaunch aubo_i5_pilz_moveit_config moveit_planning_execution.launch robot_ip:=127.0.0.1
 
 #2. Launch fake_speed_override_node
 #source devel/setup.bash
@@ -29,3 +29,4 @@
 #r.resume()
 #r.stop()
 #In this case stop() only ends the move-thread.
+#if need use blending sequence,must disable Addtime adapter

@@ -64,13 +64,13 @@ def start_program():
     # Repeat the previous steps with a sequence command
     sequence = Sequence()
     sequence.append(Ptp(goal=start_joint_values))
-    sequence.append(Lin(goal=Pose(position=Point(0, 0.3, 0)), reference_frame="base_link",relative=True,
+    sequence.append(Lin(goal=Pose(position=Point(0.2, 0.1, 0)), reference_frame="base_link",relative=True,
            vel_scale=0.1, acc_scale=0.1), blend_radius=0.05)           
-    sequence.append(Lin(goal=Pose(position=Point(0.3, 0.3, 0)), reference_frame="base_link",relative=True,
+    sequence.append(Lin(goal=Pose(position=Point(0, 0.2, 0)), reference_frame="base_link",relative=True,
            vel_scale=0.1, acc_scale=0.1), blend_radius=0.05)
-    sequence.append(Lin(goal=Pose(position=Point(0.3, 0, 0)), reference_frame="base_link",relative=True,
+    sequence.append(Lin(goal=Pose(position=Point(0.2, 0.3, 0)), reference_frame="base_link",relative=True,
            vel_scale=0.1, acc_scale=0.1), blend_radius=0.05)
-    sequence.append(Lin(goal=Pose(position=Point(0, 0, 0)), reference_frame="base_link",relative=True,
+    sequence.append(Lin(goal=Pose(position=Point(0, 0.4, 0)), reference_frame="base_link",relative=True,
            vel_scale=0.1, acc_scale=0.1), blend_radius=0)
     r.move(sequence)
 
