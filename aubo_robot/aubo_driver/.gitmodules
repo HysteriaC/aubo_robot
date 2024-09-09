@@ -1,3 +1,0 @@
-[submodule "lib"]
-	path = aubo_driver/lib
-	url = https://github.com/AuboRobot/aubo_robot.git
